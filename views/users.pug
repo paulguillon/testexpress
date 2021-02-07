@@ -1,7 +1,11 @@
 extends layout
 
+block header
+  h1 Ceci est le header
 block content
-  h1= id
-  p page users
+  h1 Contenu
+  ul
+    each i in [1,2,3]
+      li=i
 block footer
-  h3 Ceci est le footer de la page users
+  h3 Ceci est le footer de la page user
